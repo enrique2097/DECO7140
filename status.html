@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Sunny Coast International Airport Transport</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="flight-status">
+    <header>
+		<nav class="row main-menu align-center">
+			<div class="d-flex align-center">
+				<img src="image/logo.png" alt="Logo" class="h_logo">
+				<div class="title">
+					<a href="index.html"><p>Sunny Coast<br>International Airport</p></a>
+				</div>
+			</div>
+		
+			<div class="ml-auto">
+				<ul>
+					<li><a href="status.html" class="page">Flight Status</a></li>
+					<li><a href="transport.html" class="tt">Transport</a></li>
+					<li><a href="travel_guide.html" class="tg">Travel Guide</a></li>
+					<li><a href="parking.html" class="p">Parking</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+    <section id="status-cover">
+        <div class="identity h-110">
+            <div class="d-flex title-name">
+                <div class="name">
+                    <h1>Flight Status</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flight-table">
+    <div class="d-flex block mt-auto">
+        <div class="search-banner text-center">
+            <div class="d-flex choice mt-auto arr-dep">
+                <h2 class="c-page">Arrivals</h2>
+                <a href="Dstatus.html"><h2>Departures</h2></a>
+            </div>
+            <p>Search by flight number</p>
+            <input type="text" name="search-bar" id="search-bar" onkeyup="searchFilter()" placeholder="Search.....">
+        </div>
+    </div>  
+    <div class="d-flex choice mt-auto">
+    <table id="timetable">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Airline</th>
+                <th>Flight</th>
+                <th>Origin</th>
+                <th>Parking Stand</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:00</td>
+                <td>Qantas</td>
+                <td>QF457</td>
+                <td>Brisbane</td>
+                <td>S01</td>
+                <td class="green">Landed</td>
+            </tr>
+            <tr>
+                <td>10.05</td>
+                <td>Virgin Australia</td>
+                <td>VA890</td>
+                <td>Sydney</td>
+                <td>S05</td>
+                <td class="green">Landed</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Cathay Pacific</td>
+                <td>CX67</td>
+                <td>Hong Kong</td>
+                <td>N07</td>
+                <td class="red">Est 11:00</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>Qantas</td>
+                <td>QF456</td>
+                <td>Melbourne</td>
+                <td>S10</td>
+                <td class="green">Landed</td>
+            </tr>
+            <tr>
+                <td>12:45</td>
+                <td>Singapore Airlines</td>
+                <td>SA890</td>
+                <td>Singapore</td>
+                <td>D34</td>
+                <td class="green">Landed</td>
+            </tr>
+            <tr>
+                <td>13:10</td>
+                <td>Jetstar</td>
+                <td>KJ54</td>
+                <td>Perth</td>
+                <td>P38</td>
+                <td class="red">Est14:00</td>
+            </tr>
+            <tr>
+                <td>13:40</td>
+                <td>New Zealand Air</td>
+                <td>IO45</td>
+                <td>Ackland</td>
+                <td>N67</td>
+                <td class="green">Landed</td>
+            </tr>
+            <tr>
+                <td>14:25</td>
+                <td>Cathay Pacific</td>
+                <td>CX890</td>
+                <td>Hong Kong</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>15:35</td>
+                <td>Bristish Airways</td>
+                <td>BA80</td>
+                <td>London</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>Qantas</td>
+                <td>QF46</td>
+                <td>Los Angeles</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td>Cathay Pacific</td>
+                <td>CX890</td>
+                <td>Hong Kong</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>18:30</td>
+                <td>Qantas</td>
+                <td>QF457</td>
+                <td>Brisbane</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>20:00</td>
+                <td>Virgin Australia</td>
+                <td>VA678</td>
+                <td>Gold Coast</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>21:45</td>
+                <td>Singapore Airlines</td>
+                <td>SQ456</td>
+                <td>Singapore</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>22:35</td>
+                <td>Thai Airways</td>
+                <td>TA740</td>
+                <td>Bangkok</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>23:45</td>
+                <td>Virgin Australia</td>
+                <td>VA257</td>
+                <td>Perth</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </section>
+
+    <section id="useful-info" class=" background-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col col-md-4 col-12 zoom">
+					<a href="transport.html"><img src="image/transport_option.jpg" alt="Transport Option">
+					<h3>Transporting Options</h3></a>
+					<p>Explore the transporting options to & from the airport</p>
+				</div>
+				<div class="col col-md-4 col-12 zoom">
+					<a href="parking.html"><img src="image/parking.jpg" alt="Parking">
+					<h3>Parking</h3></a>
+					<p>Get to the know everything when parking in the airport</p>
+				</div>
+				<div class="col col-md-4 col-12 zoom">
+					<a href="travel_guide.html"><img src="image/travel_guide.jpg" alt="Travel Guide">
+					<h3>Travel Guide</h3></a>
+					<p>Find out all the important travel information</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <footer id="footer">
+		<div class="logo_info">
+			<img src="image/logo.png" alt="Logo">
+			<p>Email: snc2097@hotmail.com</p>
+			<p>Phone: +61 1234567890</p>
+		</div>
+		<div class="foot_nav">
+			<ul>
+				<li>
+					<a href="status.html">Flight Status</a>
+				</li>
+				<li>
+					<a href="transport.html">Transport</a>
+				</li>
+				<li>
+					<a href="travel_guide.html">Travel Guide</a>
+				</li>
+				<li>
+					<a href="parking.html">Parking</a>
+				</li>
+				<li>
+					<a href="about.html">About Us</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

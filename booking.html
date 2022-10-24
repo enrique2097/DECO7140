@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sunny Coast International Airport Transport</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://kit.fontawesome.com/64cd7bbc7b.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="booking">
+    <header>
+		<nav class="row main-menu align-center">
+			<div class="d-flex align-center">
+				<img src="image/logo.png" alt="Logo" class="h_logo">
+				<div class="title">
+					<a href="index.html"><p>Sunny Coast<br>International Airport</p></a>
+				</div>
+			</div>
+		
+			<div class="ml-auto">
+				<ul>
+					<li><a href="status.html" class="fs">Flight Status</a></li>
+					<li><a href="transport.html" class="tt">Transport</a></li>
+					<li><a href="travel_guide.html" class="tg">Travel Guide</a></li>
+					<li><a href="parking.html" class="page">Parking</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+    <section id="parking-cover">
+        <div class="identity h-110">
+            <div class="d-flex title-name">
+                <div class="name">
+                    <h1>Parking</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking-form">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-8 col-12">
+                    <div class="details">
+                        <form id="form">
+                            <h2>Your Details</h2><br><br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="form-item col col-md-6 col-12">
+                                            <label for="name"><strong>Full Name</strong></label><br>
+                                            <p>Your name according to your ID card</p>
+                                            <input type="text" id="username" name="name" placeholder="Enrique Cheung">
+                                            <i class="fa-solid fa-circle-exclamation invalid"></i>
+                                            <i class="fa-solid fa-circle-check valid"></i>
+                                            <div class="error"></div>
+                                        </div>
+                                        <div class="col col-md-6 col-12">
+                                            <label for="email"><strong>Email</strong></label><br>
+                                            <p>Your email should be lowercase</p>
+                                            <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+                                            <i class="fa-solid fa-circle-exclamation invalid"></i>
+                                            <i class="fa-solid fa-circle-check valid"></i>
+                                            <div class="error"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="phoneNumber"><strong>Phone Number</strong></label><br>
+                                    <p>No more than 10 digits</p>
+                                    <input type="number" id="phoneNumber" name="phoneNumber" placeholder="0457391756">
+                                    <i class="fa-solid fa-circle-exclamation invalid"></i>
+                                    <i class="fa-solid fa-circle-check valid"></i>
+                                    <div class="error"></div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col col-md-6 col-12">
+                                            <label for="from"><strong>From</strong></label><br>
+                                            <p>Date and time for your entry</p>
+                                            <input type="datetime-local" id="from" name="from">
+                                            <i class="fa-solid fa-circle-exclamation invalid"></i>
+                                            <i class="fa-solid fa-circle-check valid"></i>
+                                            <div class="error"></div>
+                                        </div>
+                                        <div class="col col-md-6 col-12">
+                                            <label for="to"><strong>To</strong></label><br>
+                                            <p>Date and time for your exit</p>
+                                            <input type="datetime-local" id="to" name="to">
+                                            <i class="fa-solid fa-circle-exclamation invalid"></i>
+                                            <i class="fa-solid fa-circle-check valid"></i>
+                                            <div class="error"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reg">
+                                    <label for="reg"><strong>Vehicle registration</strong></label><br>
+                                    <p>Don't enter any spaces or special characters</p>
+                                    <input type="text" id="reg" name="reg" placeholder="ABC123">
+                                    <i class="fa-solid fa-circle-exclamation invalid"></i>
+                                    <i class="fa-solid fa-circle-check valid"></i>
+                                    <div class="error"></div>
+                                </div>
+                                <div>
+                                    <h2>Payment</h2><br>
+                                    <img src="image/icon--logo-american-express.svg">
+                                    <img src="image/icon--logo-visa.svg">
+                                    <img src="image/icon--logo-mastercard.svg">
+                                </div>
+                                <div>
+                                    <label for="card"><strong>Card Number</strong></label><br>
+                                    <p>Input your credit card number</p>
+                                    <input type="number" id="card" name="card" placeholder="1234-1234-1234-1234">
+                                    <i class="fa-solid fa-circle-exclamation invalid"></i>
+                                    <i class="fa-solid fa-circle-check valid"></i>
+                                    <div class="error"></div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col col-md-6 col-12">
+                                            <label for="date"><strong>Expiry Date</strong></label><br>
+                                            <p>Input your credit card's expiry date</p>
+                                            <input type="date" id="date" name="date">
+                                            <i class="fa-solid fa-circle-exclamation invalid"></i>
+                                            <i class="fa-solid fa-circle-check valid"></i>
+                                            <div class="error"></div>
+                                        </div>
+                                        <div class="code col col-md-6 col-12">
+                                            <label for="csv"><strong>CSV Code</strong></label><br>
+                                            <p>The CSV code is in the back of your card</p>
+                                            <input type="number" id="csv" name="csv" placeholder="123">
+                                            <i class="fa-solid fa-circle-exclamation invalid"></i>
+                                            <i class="fa-solid fa-circle-check valid"></i>
+                                            <div class="error"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" id="submit">Submit</button>
+                                <a href="parking.html"><label class="back">Go Back</label></a>
+                        </form>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-12">
+                    <div class="summary">
+                        <h2>Booking Summary</h2><br><br>
+                        <p>Entry: 5:00pm Mon 23 May 2022<br><br>
+                            Exit: 8:00am Thu 26 May 2022</p>
+                        <p class="price">Total: $35</p>
+                        <p class="conditions">We care about protecting your personal information and 
+                            manage it in accordance with your subscription preferences, 
+                            our Parking Terms and Conditions and our Privacy Policy. 
+                            To find out more, read our Privacy Collection Statement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+		<div class="logo_info">
+			<img src="image/logo.png" alt="Logo">
+			<p>Email: snc2097@hotmail.com</p>
+			<p>Phone: +61 1234567890</p>
+		</div>
+		<div class="foot_nav">
+			<ul>
+				<li>
+					<a href="status.html">Flight Status</a>
+				</li>
+				<li>
+					<a href="transport.html">Transport</a>
+				</li>
+				<li>
+					<a href="travel_guide.html">Travel Guide</a>
+				</li>
+				<li>
+					<a href="parking.html">Parking</a>
+				</li>
+				<li>
+					<a href="about.html">About Us</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+<script src="js/booking.js"></script>
+</html>
